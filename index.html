@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nadia Shahzad | CS Portfolio & Showcase</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300 font-sans">
+
+  <!-- Navigation Bar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-slate-200 dark:border-slate-800 px-6 py-4">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="#hero" class="text-xl font-bold tracking-tight text-emerald-600 dark:text-emerald-400">
+        Nadia<span class="text-slate-800 dark:text-white">.CS</span>
+      </a>
+
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a href="#about" class="hover:text-emerald-500 transition">About</a>
+        <a href="#skills" class="hover:text-emerald-500 transition">Skills</a>
+        <a href="#projects" class="hover:text-emerald-500 transition">Projects</a>
+        <a href="#experience" class="hover:text-emerald-500 transition">Experience</a>
+        <a href="#certifications" class="hover:text-emerald-500 transition">Certifications</a>
+        <a href="#interactive-apps" class="hover:text-emerald-500 transition">Interactive Tools</a>
+      </div>
+
+      <div class="flex items-center space-x-4">
+        <button id="themeToggle"
+          class="p-2 rounded-lg bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 transition">
+          <i id="themeIcon" class="fas fa-moon text-slate-700 dark:text-amber-300"></i>
+        </button>
+        <a href="https://www.linkedin.com/in/nadia-shahzad-792586372/" target="_blank"
+          class="px-4 py-2 text-sm font-semibold text-white bg-emerald-600 hover:bg-emerald-700 rounded-lg shadow-sm transition">
+          <i class="fab font-normal fa-linkedin mr-1"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="pt-32 pb-20 px-6 max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+      <div class="flex-1 space-y-6">
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          UG CS Student @ UET Peshawar
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+          Hi, I'm <span class="text-emerald-600 dark:text-emerald-400">Nadia Shahzad</span>
+        </h1>
+        <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+          Full Stack Web Developer (MERN Stack) | JavaFX Desktop Developer | Python & Data Structures Enthusiast
+        </p>
+        <p class="text-sm text-slate-500 dark:text-slate-400">
+          <i class="fas fa-map-marker-alt text-emerald-500 mr-1"></i> Peshawar, Khyber Pakhtunkhwa, Pakistan
+        </p>
+        <div class="flex flex-wrap gap-4 pt-2">
+          <a href="#projects"
+            class="px-6 py-3 font-medium text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl shadow-md transition">
+            View Projects <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/nadia-shahzad-792586372/" target="_blank"
+            class="px-6 py-3 font-medium bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 rounded-xl transition">
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <!-- Profile Card -->
+      <div class="relative group">
+        <div
+          class="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-teal-400 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500">
+        </div>
+        <div
+          class="relative bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-xl flex flex-col items-center text-center space-y-4">
+          <div
+            class="w-32 h-32 rounded-full bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center text-emerald-600 dark:text-emerald-400 text-5xl font-extrabold border-4 border-emerald-500/20">
+            NS
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">Nadia Shahzad</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400">BS CS @ UET Peshawar</p>
+          </div>
+          <div class="grid grid-cols-2 gap-4 w-full pt-2 border-t border-slate-100 dark:border-slate-700 text-center">
+            <div>
+              <span class="block text-xl font-bold text-emerald-600 dark:text-emerald-400">5th</span>
+              <span class="text-xs text-slate-500">Semester CS</span>
+            </div>
+            <div>
+              <span class="block text-xl font-bold text-emerald-600 dark:text-emerald-400">500+</span>
+              <span class="text-xs text-slate-500">Connections</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6 bg-slate-100 dark:bg-slate-800/50">
+    <div class="max-w-6xl mx-auto space-y-8">
+      <div class="text-center space-y-2">
+        <h2 class="text-3xl font-bold">About Me</h2>
+        <div class="w-12 h-1 bg-emerald-500 mx-auto rounded"></div>
+      </div>
+      <div
+        class="max-w-3xl mx-auto bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 space-y-4">
+        <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+          I am a Computer Science student passionate about web development and software engineering. I enjoy building
+          clean, functional applications and solving complex problems with well-structured code.
+        </p>
+        <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+          Currently strengthening my skills in front-end and back-end development, data structures, and software design,
+          while actively seeking opportunities to learn, contribute, and grow in the tech industry.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Matrix -->
+  <section id="skills" class="py-16 px-6 max-w-6xl mx-auto">
+    <div class="text-center space-y-2 mb-12">
+      <h2 class="text-3xl font-bold">Skills & Technologies</h2>
+      <div class="w-12 h-1 bg-emerald-500 mx-auto rounded"></div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 space-y-4">
+        <div
+          class="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-950 flex items-center justify-center text-emerald-600">
+          <i class="fas fa-code text-lg"></i>
+        </div>
+        <h3 class="font-bold text-lg">Frontend Dev</h3>
+        <ul class="text-sm space-y-2 text-slate-600 dark:text-slate-300">
+          <li class="flex items-center gap-2"><i class="fab fa-react text-emerald-500"></i> React.js</li>
+          <li class="flex items-center gap-2"><i class="fab fa-js text-emerald-500"></i> JavaScript (ES6+)</li>
+          <li class="flex items-center gap-2"><i class="fab fa-html5 text-emerald-500"></i> HTML5 & CSS3</li>
+          <li class="flex items-center gap-2"><i class="fas fa-paint-brush text-emerald-500"></i> Tailwind CSS</li>
+        </ul>
+      </div>
+
+      <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 space-y-4">
+        <div
+          class="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-950 flex items-center justify-center text-emerald-600">
+          <i class="fas fa-server text-lg"></i>
+        </div>
+        <h3 class="font-bold text-lg">Backend & Core</h3>
+        <ul class="text-sm space-y-2 text-slate-600 dark:text-slate-300">
+          <li class="flex items-center gap-2"><i class="fab fa-node-js text-emerald-500"></i> Node.js / Express</li>
+          <li class="flex items-center gap-2"><i class="fab fa-python text-emerald-500"></i> Python Programming</li>
+          <li class="flex items-center gap-2"><i class="fas fa-database text-emerald-500"></i> MongoDB / SQL</li>
+          <li class="flex items-center gap-2"><i class="fas fa-diagram-project text-emerald-500"></i> Data Structures
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 space-y-4">
+        <div
+          class="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-950 flex items-center justify-center text-emerald-600">
+          <i class="fas fa-desktop text-lg"></i>
+        </div>
+        <h3 class="font-bold text-lg">Software & Tools</h3>
+        <ul class="text-sm space-y-2 text-slate-600 dark:text-slate-300">
+          <li class="flex items-center gap-2"><i class="fab fa-java text-emerald-500"></i> Java & JavaFX</li>
+          <li class="flex items-center gap-2"><i class="fab fa-git-alt text-emerald-500"></i> Git & GitHub</li>
+          <li class="flex items-center gap-2"><i class="fas fa-vial text-emerald-500"></i> OOP Principles</li>
+          <li class="flex items-center gap-2"><i class="fas fa-terminal text-emerald-500"></i> VS Code / Antigravity
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 space-y-4">
+        <div
+          class="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-950 flex items-center justify-center text-emerald-600">
+          <i class="fas fa-users text-lg"></i>
+        </div>
+        <h3 class="font-bold text-lg">Soft Skills</h3>
+        <ul class="text-sm space-y-2 text-slate-600 dark:text-slate-300">
+          <li class="flex items-center gap-2"><i class="fas fa-chalkboard-teacher text-emerald-500"></i> STEM
+            Instruction</li>
+          <li class="flex items-center gap-2"><i class="fas fa-brain text-emerald-500"></i> Prompt Engineering</li>
+          <li class="flex items-center gap-2"><i class="fas fa-tasks text-emerald-500"></i> Agile Project Mgmt</li>
+          <li class="flex items-center gap-2"><i class="fas fa-lightbulb text-emerald-500"></i> Problem Solving</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Projects Section -->
+  <section id="projects" class="py-16 px-6 bg-slate-100 dark:bg-slate-800/50">
+    <div class="max-w-6xl mx-auto space-y-8">
+      <div class="text-center space-y-2">
+        <h2 class="text-3xl font-bold">Featured Projects</h2>
+        <p class="text-slate-500 dark:text-slate-400 text-sm">Real-world applications built with modern web and desktop
+          frameworks.</p>
+        <div class="w-12 h-1 bg-emerald-500 mx-auto rounded"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Project 1: MERN Stack -->
+        <div
+          class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden shadow-sm flex flex-col justify-between">
+          <div class="p-6 space-y-4">
+            <div class="flex justify-between items-center">
+              <span
+                class="px-3 py-1 bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 rounded-full text-xs font-bold">Full
+                Stack Web</span>
+              <i class="fab fa-react text-2xl text-emerald-500"></i>
+            </div>
+            <h3 class="text-xl font-bold">MERN Stack Web Application</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              A dynamic, full-stack web application developed using MongoDB, Express.js, React.js, and Node.js.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded-md">React.js</span>
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded-md">Node.js</span>
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded-md">Express</span>
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded-md">MongoDB</span>
+            </div>
+          </div>
+          <div class="p-6 border-t border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-800/50">
+            <a href="https://www.linkedin.com/posts/nadia-shahzad-792586372_webtechnologies-mernstack-reactjs-ugcPost-7485728442156646401-MJDO/"
+              target="_blank"
+              class="inline-flex items-center text-xs font-bold text-emerald-600 hover:text-emerald-700 dark:text-emerald-400">
+              View Project Details on LinkedIn <i class="fas fa-external-link-alt ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: JavaFX Software -->
+        <div
+          class="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden shadow-sm flex flex-col justify-between">
+          <div class="p-6 space-y-4">
+            <div class="flex justify-between items-center">
+              <span
+                class="px-3 py-1 bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300 rounded-full text-xs font-bold">Desktop
+                App</span>
+              <i class="fab fa-java text-2xl text-blue-500"></i>
+            </div>
+            <h3 class="text-xl font-bold">JavaFX Desktop Application</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              A multi-threaded desktop GUI application constructed in JavaFX demonstrating Object-Oriented Software
+              Design.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded-md">Java</span>
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded-md">JavaFX</span>
+              <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-700 text-xs rounded-md">OOP Principles</span>
+            </div>
+          </div>
+          <div class="p-6 border-t border-slate-100 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-800/50">
+            <a href="https://www.linkedin.com/posts/nadia-shahzad-792586372_javafx-softwaredevelopment-teamwork-ugcPost-7450938817693249536-6BMq/"
+              target="_blank"
+              class="inline-flex items-center text-xs font-bold text-emerald-600 hover:text-emerald-700 dark:text-emerald-400">
+              View Project Details on LinkedIn <i class="fas fa-external-link-alt ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education Section -->
+  <section id="experience" class="py-16 px-6 max-w-6xl mx-auto">
+    <div class="text-center space-y-2 mb-12">
+      <h2 class="text-3xl font-bold">Experience & Education</h2>
+      <div class="w-12 h-1 bg-emerald-500 mx-auto rounded"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="space-y-6">
+        <h3 class="text-xl font-bold flex items-center gap-2">
+          <i class="fas fa-briefcase text-emerald-500"></i> Work Experience
+        </h3>
+        <div
+          class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 space-y-3">
+          <div class="flex justify-between items-start">
+            <div>
+              <h4 class="font-bold text-lg">STEM Instructor</h4>
+              <p class="text-emerald-600 dark:text-emerald-400 text-sm font-medium">NovaMind Academy • Internship</p>
+            </div>
+            <span
+              class="text-xs px-2.5 py-1 bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 rounded-full font-medium">Remote</span>
+          </div>
+          <p class="text-xs text-slate-400">Sep 2026 – Present • Peshawar, KP, Pakistan</p>
+          <p class="text-sm text-slate-600 dark:text-slate-300">
+            Educating students in STEM, Scratch, and robotics through practical, interactive exercises.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        <h3 class="text-xl font-bold flex items-center gap-2">
+          <i class="fas fa-graduation-cap text-emerald-500"></i> Education
+        </h3>
+        <div
+          class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 space-y-4">
+          <div>
+            <h4 class="font-bold text-base">University of Engineering & Technology Peshawar</h4>
+            <p class="text-xs text-slate-500">Oct 2024 – Oct 2028 (BS Computer Science)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive CS Apps Section -->
+  <section id="interactive-apps" class="py-16 px-6 max-w-6xl mx-auto space-y-12">
+    <div class="text-center space-y-2">
+      <h2 class="text-3xl font-bold">Interactive Academic Tools</h2>
+      <div class="w-12 h-1 bg-emerald-500 mx-auto rounded"></div>
+    </div>
+
+    <div
+      class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-md border border-slate-200 dark:border-slate-700 space-y-6">
+      <div class="flex flex-col md:flex-row justify-between md:items-center gap-4">
+        <div>
+          <h3 class="text-2xl font-bold">5th Semester GPA Forecaster</h3>
+        </div>
+        <button id="addCourseBtn"
+          class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-lg transition self-start md:self-auto">
+          <i class="fas fa-plus mr-1"></i> Add Course
+        </button>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-slate-50 dark:bg-slate-700/50 text-slate-500 uppercase text-xs">
+            <tr>
+              <th class="p-3">Course Name</th>
+              <th class="p-3">Credit Hours</th>
+              <th class="p-3">Expected Grade</th>
+              <th class="p-3">Action</th>
+            </tr>
+          </thead>
+          <tbody id="courseTableBody" class="divide-y divide-slate-100 dark:divide-slate-700">
+            <tr>
+              <td class="p-3"><input type="text" value="Design & Analysis of Algorithms"
+                  class="bg-transparent border border-slate-300 dark:border-slate-600 rounded px-2 py-1 w-full text-xs">
+              </td>
+              <td class="p-3"><input type="number" value="3"
+                  class="credit-input bg-transparent border border-slate-300 dark:border-slate-600 rounded px-2 py-1 w-16 text-xs">
+              </td>
+              <td class="p-3">
+                <select
+                  class="grade-select bg-transparent border border-slate-300 dark:border-slate-600 rounded px-2 py-1 text-xs">
+                  <option value="4.0">A (4.0)</option>
+                  <option value="3.7">A- (3.7)</option>
+                  <option value="3.3">B+ (3.3)</option>
+                  <option value="3.0">B (3.0)</option>
+                </select>
+              </td>
+              <td class="p-3"><button class="delete-row-btn text-red-500 hover:text-red-700"><i
+                    class="fas fa-trash"></i></button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div
+        class="flex flex-col sm:flex-row justify-between items-center bg-slate-50 dark:bg-slate-900 p-4 rounded-xl gap-4">
+        <button id="calcGpaBtn"
+          class="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-lg transition w-full sm:w-auto">
+          Calculate Forecasted GPA
+        </button>
+        <div class="text-center sm:text-right">
+          <span class="text-xs text-slate-400 block">Forecasted Semester GPA</span>
+          <span id="gpaResult" class="text-2xl font-black text-emerald-600 dark:text-emerald-400">4.00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- External JavaScript -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
